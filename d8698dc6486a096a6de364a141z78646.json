@@ -1,27 +1,27 @@
 [
-    {
-        "alias": "bullish mac vm",
-        "machine-id": "3c25e8e872464696a7493ab45b57db7e",
-        "time": "06:59:37.000000"
-    },
-    {
-        "alias": "samsung android",
-        "machine-id": "1624aede8c3d11efb113001c425de46f",
-        "time": "06:59:38.000000"
-    },
-    {
-        "alias": "p14s",
-        "machine-id": "p14sfixme",
-        "time": "06:59:36.000000"
-    },
-    {
-        "alias": "desktop",
-        "machine-id": "desktopfixme",
-        "time": "06:59:35.000000"
-    },
-    {
-        "alias": "hugo's android",
-        "machine-id": "sekita",
-        "time": "06:59:35.000000"
-    }
+  {
+    "alias": "bullish mac vm",
+    "machine-id": "3c25e8e872464696a7493ab45b57db7e",
+    "time": "06:59:37.000000"
+  },
+  {
+    "alias": "samsung android",
+    "machine-id": "1624aede8c3d11efb113001c425de46f",
+    "time": "06:59:38.000000"
+  },
+  {
+    "alias": "p14s",
+    "machine-id": "p14sfixme",
+    "time": "06:59:36.000000"
+  },
+  {
+    "alias": "desktop",
+    "machine-id": "desktopfixme",
+    "time": "06:59:35.000000"
+  },
+  {
+    "alias": "hugo's android",
+    "machine-id": "sekita",
+    "time": "06:59:35.000000"
+  }
 ]
