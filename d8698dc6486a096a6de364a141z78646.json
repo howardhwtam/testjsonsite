@@ -1,7 +1,7 @@
 [
   {
     "alias": "mom's android",
-    "machine-id": "1624aede8c3d11efb113001c425de46f",
+    "machine_id": "1624aede8c3d11efb113001c425de46f",
     "time": "06:59:39.444444",
     "xy": {
       "app_icon": {
@@ -28,7 +28,7 @@
   },
   {
     "alias": "hugo's android",
-    "machine-id": "sekita",
+    "machine_id": "sekita",
     "time": "06:59:39.500000",
     "xy": {
       "app_icon": {
@@ -55,17 +55,17 @@
   },
   {
     "alias": "mac vm",
-    "machine-id": "3c25e8e872464696a7493ab45b57db7e",
+    "machine_id": "3c25e8e872464696a7493ab45b57db7e",
     "time": "06:59:38.000000"
   },
   {
     "alias": "p14s",
-    "machine-id": "3235d511597b466ebd4d0e6c2abb5107",
+    "machine_id": "3235d511597b466ebd4d0e6c2abb5107",
     "time": "06:59:39.444444"
   },
   {
     "alias": "desktop",
-    "machine-id": "e23f45bccc47416787124f6e1d82ffa3",
+    "machine_id": "e23f45bccc47416787124f6e1d82ffa3",
     "time": "06:59:57.500000"
   }
 ]
