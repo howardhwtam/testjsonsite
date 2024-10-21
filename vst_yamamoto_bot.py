@@ -3,7 +3,7 @@ import json
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 # Replace 'YOUR_TOKEN' with your bot's token
-bot = telebot.TeleBot("YOUR_TOKEN")
+bot = telebot.TeleBot("7703386049:AAFU37SQK-jSQ4CL5NIiBjo-t4ORNSxC48E")
 
 WHITELISTED_USERS = [
     1761200689,  # Howard
@@ -11,16 +11,10 @@ WHITELISTED_USERS = [
 ]
 
 
-# Load configuration data from JSON file
-# def load_config():
-#     with open("d8698dc6486a096a6de364a141z78646.json", "r") as file:
-#         return json.load(file)
-
-
 def get_login_time(): 
     with open("d8698dc6486a096a6de364a141z78646.json", "r") as file:
         data = json.load(file)
-        print(data)
+        return data
 
 
 # Function to check if a user is allowed
@@ -36,7 +30,7 @@ def send_welcome(message):
             message, "Hello! Use /view_config to see the current configuration."
         )
     else:
-        bot.reply_to(message, "Sorry, you are not authorized to use this bot.")
+        bot.reply_to(message, "401 Unauthorized")
 
 
 # Handle the /view_config command
@@ -61,7 +55,7 @@ def callback_handler(call):
     if is_user_allowed(call.from_user.id):
         if call.data == "view_config":
             # Load and send the configuration data
-            config_data = load_config()
+            config_data = get_login_time()
             config_text = json.dumps(config_data, indent=4)
             bot.send_message(
                 call.message.chat.id, f"Current Configuration:\n{config_text}"
