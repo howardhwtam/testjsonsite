@@ -1,9 +1,10 @@
 import telebot
 import json
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
+from secrets import TELEGRAM_TOKEN, WHITELISTED_USERS
 
 # Replace 'YOUR_TOKEN' with your bot's token
-bot = telebot.TeleBot("7703386049:AAFU37SQK-jSQ4CL5NIiBjo-t4ORNSxC48E")
+bot = telebot.TeleBot(TELEGRAM_TOKEN)
 
 WHITELISTED_USERS = [
     1761200689,  # Howard
