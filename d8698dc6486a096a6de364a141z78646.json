@@ -32,24 +32,24 @@
     "time": "06:59:33.800004",
     "xy": {
       "app_icon": {
-        "x": ,
-        "y": 
+        "x": 0,
+        "y": 0
       },
       "first_login_button": {
-        "x": ,
-        "y": 
+        "x": 0,
+        "y": 0
       },
       "username_field": {
-        "x": ,
-        "y": 
+        "x": 0,
+        "y": 0
       },
       "password_field": {
-        "x": ,
-        "y": 
+        "x": 0,
+        "y": 0
       },
       "second_login_button": {
-        "x": ,
-        "y": 
+        "x": 0,
+        "y": 0
       }
     }
   },
