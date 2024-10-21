@@ -28,28 +28,28 @@
   },
   {
     "alias": "alan's android",
-    "machine_id": "FIXME",
+    "machine_id": "1d97a7a7",
     "time": "06:59:38.800004",
     "xy": {
       "app_icon": {
-        "x": 0,
-        "y": 0
+        "x": 189,
+        "y": 876
       },
       "first_login_button": {
-        "x": 0,
-        "y": 0
+        "x": 625,
+        "y": 841
       },
       "username_field": {
-        "x": 0,
-        "y": 0
+        "x": 781,
+        "y": 478
       },
       "password_field": {
-        "x": 0,
-        "y": 0
+        "x": 736,
+        "y": 775
       },
       "second_login_button": {
-        "x": 0,
-        "y": 0
+        "x": 598,
+        "y": 1146
       }
     }
   },
