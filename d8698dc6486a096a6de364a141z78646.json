@@ -2,7 +2,7 @@
   {
     "alias": "howard's android",
     "machine_id": "R9TR702NNNJ",
-    "time": "06:59:34.000004",
+    "time": "06:59:39.200004",
     "xy": {
       "app_icon": {
         "x": 162,
@@ -29,7 +29,7 @@
   {
     "alias": "alan's android",
     "machine_id": "FIXME",
-    "time": "06:59:33.800004",
+    "time": "06:59:38.800004",
     "xy": {
       "app_icon": {
         "x": 0,
@@ -56,7 +56,7 @@
   {
     "alias": "hugo's android 1",
     "machine_id": "Z5KRKBZTRKO7ZPIF",
-    "time": "06:59:34.200004",
+    "time": "06:59:39.444444",
     "xy": {
       "app_icon": {
         "x": 164,
@@ -83,7 +83,7 @@
   {
     "alias": "hugo's android 2",
     "machine_id": "E6M7KVHYX4CEWKQK",
-    "time": "06:59:33.500004",
+    "time": "06:59:38.500004",
     "xy": {
       "app_icon": {
         "x": 164,
@@ -110,16 +110,16 @@
   {
     "alias": "howard's mac vm",
     "machine_id": "3c25e8e872464696a7493ab45b57db7e",
-    "time": "06:59:33.200004"
+    "time": "06:59:39.000004"
   },
   {
     "alias": "howard's p14s",
     "machine_id": "3235d511597b466ebd4d0e6c2abb5107",
-    "time": "06:59:33.500004"
+    "time": "06:59:38.500004"
   },
   {
     "alias": "howard's desktop",
     "machine_id": "e23f45bccc47416787124f6e1d82ffa3",
-    "time": "06:59:33.700004"
+    "time": "06:59:38.700004"
   }
 ]
