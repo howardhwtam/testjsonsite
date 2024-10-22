@@ -3,22 +3,27 @@ import json
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 from secrets import TELEGRAM_TOKEN, WHITELISTED_USERS
 
-# Replace 'YOUR_TOKEN' with your bot's token
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 
 WHITELISTED_USERS = [
     1761200689,  # Howard
-    1111111111,  # Hugo
+#    2127460674,  # Hugo
 ]
 
 
 def get_login_time(): 
     with open("d8698dc6486a096a6de364a141z78646.json", "r") as file:
         data = json.load(file)
-        return data
+
+        ret = ""
+        for device in data: 
+            alias = device["alias"]
+            login_time = device["time"]
+            ret += f"{alias}: {login_time}\n"
+
+        return ret
 
 
-# Function to check if a user is allowed
 def is_user_allowed(user_id):
     return user_id in WHITELISTED_USERS
 
@@ -79,3 +84,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+#    print(get_login_time())
