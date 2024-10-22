@@ -1,6 +1,7 @@
 import json
 import yamamoto_secrets
 import shutil
+import subprocess
 from datetime import datetime
 
 import telebot
@@ -80,6 +81,10 @@ def update_json(alias, new_time):
         print(f"[{get_ts()}] Yamamoto: Error during JSON update: {e}")
 
 
+def push_config_to_github():
+    subprocess.run(["bash", "push_changes_to_github.sh"])
+
+
 # Handle the /start command
 @bot.message_handler(commands=["start"])
 def reply_start(message):
@@ -141,11 +146,7 @@ def reply_edit_config(message):
 @bot.callback_query_handler(func=lambda call: call.data.startswith("edit_config_by_alias:"))
 def handle_edit_config_callback(call):
     alias = call.data.split(":")[1]
-    print(f"[{get_ts()}] {call.message.from_user.id}: /edit_config_by_alias ({alias})")
-
-    print('0000')
-    print(call.message)
-    print('0000')
+    print(f"[{get_ts()}] {call.message.chat.id}: /edit_config_by_alias ({alias})")
 
     bot.answer_callback_query(call.id)  # necessary?
 
@@ -156,6 +157,9 @@ def handle_edit_config_callback(call):
         if is_time_string_valid(user_input_new_time):
             update_json(alias, user_input_new_time)
             bot.send_message(message.chat.id, f"Configuration updated for {alias}")
+            push_config_to_github()
+            bot.send_message(message.chat.id, "New config uploaded to GitHub")
+            bot.send_message(message.chat.id, "Please refresh https://howardhwtam.github.io/testjsonsite/d8698dc6486a096a6de364a141z78646.json to see the changes in a few seconds")
         else:
             bot.send_message(message.chat.id, "Invalid input")
 
