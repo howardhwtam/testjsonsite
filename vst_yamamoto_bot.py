@@ -1,18 +1,22 @@
 import telebot
 import json
+from datetime import datetime
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
-from secrets import TELEGRAM_TOKEN, WHITELISTED_USERS
+from secrets import *
 
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 
-WHITELISTED_USERS = [
-    1761200689,  # Howard
-#    2127460674,  # Hugo
-]
+
+def is_user_allowed(user_id):
+    return user_id in WHITELISTED_USERS
+
+
+def get_timestamp(): 
+    return datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')
 
 
 def get_login_time(): 
-    with open("d8698dc6486a096a6de364a141z78646.json", "r") as file:
+    with open(JSON_FILE, "r") as file:
         data = json.load(file)
 
         ret = ""
@@ -24,19 +28,15 @@ def get_login_time():
         return ret
 
 
-def is_user_allowed(user_id):
-    return user_id in WHITELISTED_USERS
-
-
 # Handle the /start command
 @bot.message_handler(commands=["start"])
 def send_welcome(message):
     if is_user_allowed(message.from_user.id):
-        bot.reply_to(
-            message, "Hello! Use /view_config to see the current configuration."
-        )
+        bot.reply_to(message, "Hello! Use /view_config to see the current configuration.")
+        print(f"[{get_timestamp()}] {message.from_user.id}: {message}") # Doesn't work lol
     else:
-        bot.reply_to(message, "401 Unauthorized")
+        bot.reply_to(message, f"Your user ID {message.from_user.id} is not on the whitelist")
+
 
 
 # Handle the /view_config command
