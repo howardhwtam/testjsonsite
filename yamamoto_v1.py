@@ -19,9 +19,9 @@ def get_ts():
     return datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')
 
 
-def is_time_string_valid(datetime_str):
+def is_time_string_valid(time_str):
     try:
-        _ = datetime.strptime(datetime_str, "%Y-%m-%d %H:%M:%S.%f")
+        _ = datetime.strptime(time_str, "%H:%M:%S.%f")
         return True
     except:
         return False
@@ -61,6 +61,8 @@ def backup_json():
 
 
 def update_json(alias, new_time):
+    backup_json()
+
     print(f"[{get_ts()}] Yamamoto: Making changes to JSON file")
     try:
         with open(yamamoto_secrets.JSON_FILE, "r") as file:
@@ -94,7 +96,7 @@ def reply_help(message):
     print(f"[{get_ts()}] {message.from_user.id}: /help")
     if is_user_allowed(message.from_user.id):
         help_text = (
-            "**Here are the commands you can use:**\n"
+            "*Here are the commands you can use:*\n"
             "/start - Start interacting with the bot\n"
             "/view_config - View the current configuration\n"
             "/edit_config - Update the configuration\n"
@@ -110,7 +112,11 @@ def reply_help(message):
 def reply_view_config(message):
     print(f"[{get_ts()}] {message.from_user.id}: /view_config")
     if is_user_allowed(message.from_user.id):
-        bot.reply_to(message, get_login_times())
+        return_string = ""
+        for line in get_login_times():
+            return_string += f"{line}"
+
+        bot.reply_to(message, return_string)
     else:
         bot.reply_to(message, f"Your user ID {message.from_user.id} is not on the whitelist")
 
@@ -137,13 +143,17 @@ def handle_edit_config_callback(call):
     alias = call.data.split(":")[1]
     print(f"[{get_ts()}] {call.message.from_user.id}: /edit_config_by_alias ({alias})")
 
+    print('0000')
+    print(call.message)
+    print('0000')
+
     bot.answer_callback_query(call.id)  # necessary?
 
     msg = bot.send_message(call.message.chat.id, f"New login time for {alias}:")
 
     def process_user_input(message):
         user_input_new_time = message.text.strip()
-        if is_time_string_valid():
+        if is_time_string_valid(user_input_new_time):
             update_json(alias, user_input_new_time)
             bot.send_message(message.chat.id, f"Configuration updated for {alias}")
         else:
