@@ -51,7 +51,7 @@ def get_login_times():
 def backup_json():
     og_json = yamamoto_secrets.JSON_FILE
     datetime_str = get_ts().split(".")[0].replace(" ", "_")
-    bak_json = f"{datetime_str}_{og_json}"
+    bak_json = f"backup_config_jsons/{datetime_str}_{og_json}"
 
     print(f"[{get_ts()}] Yamamoto: Backing up JSON, {bak_json}")
     try:
