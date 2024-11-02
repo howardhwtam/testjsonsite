@@ -77,6 +77,14 @@
             "second_login_button": {
                 "x": 540,
                 "y": 1020
+            },
+            "facilities_button" : {
+                "x": 334,
+                "y": 2226
+            },
+            "search_now_button" : {
+                "x": 904,
+                "y": 1832
             }
         }
     },
@@ -104,6 +112,14 @@
             "second_login_button": {
                 "x": 540,
                 "y": 1020
+            },
+            "facilities_button" : {
+                "x": 334,
+                "y": 2226
+            },
+            "search_now_button" : {
+                "x": 904,
+                "y": 1832
             }
         }
     },
