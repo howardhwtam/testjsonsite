@@ -24,10 +24,6 @@
                 "x": 778,
                 "y": 1007
             },
-            "facilities_button": {
-                "x": 352,
-                "y": 2152
-            },
             "book_now_button": {
                 "x": 880,
                 "y": 1773
@@ -58,10 +54,6 @@
             "second_login_button": {
                 "x": 542,
                 "y": 964
-            },
-            "facilities_button": {
-                "x": 334,
-                "y": 2226
             },
             "book_now_button": {
                 "x": 904,
@@ -94,10 +86,6 @@
                 "x": 540,
                 "y": 1020
             },
-            "facilities_button": {
-                "x": 334,
-                "y": 2226
-            },
             "book_now_button": {
                 "x": 904,
                 "y": 1832
@@ -128,10 +116,6 @@
             "second_login_button": {
                 "x": 540,
                 "y": 1020
-            },
-            "facilities_button": {
-                "x": 334,
-                "y": 2226
             },
             "book_now_button": {
                 "x": 904,
