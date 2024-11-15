@@ -1,9 +1,6 @@
 #!/bin/bash
 
-while true; do
-    date
-    git add .
-    git commit -m "config update by telegram bot"
-    git push
-    sleep 3600
-done
+git add d8698dc6486a096a6de364a141z78646.json
+git commit -m "update config"
+git push
+python3 send_email_notification.py
