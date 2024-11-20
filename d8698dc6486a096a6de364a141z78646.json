@@ -2,15 +2,15 @@
     {
         "alias": "Howard's Android",
         "machine_id": "R9TR702NNNJ",
-        "time": "06:59:59.69",
+        "time": "06:59:59.65",
         "xy": {
             "app_icon": {
                 "x": 162,
                 "y": 973
             },
             "first_login_button": {
-                "x": 629,
-                "y": 795
+                "x": 552,
+                "y": 655
             },
             "username_field": {
                 "x": 880,
@@ -37,15 +37,15 @@
     {
         "alias": "Alan's Android",
         "machine_id": "1d97a7a7",
-        "time": "06:59:59.67",
+        "time": "06:59:59.70",
         "xy": {
             "app_icon": {
                 "x": 189,
                 "y": 876
             },
             "first_login_button": {
-                "x": 629,
-                "y": 795
+                "x": 622,
+                "y": 665
             },
             "username_field": {
                 "x": 781,
@@ -72,15 +72,15 @@
     {
         "alias": "Hugo's Android 1",
         "machine_id": "Z5KRKBZTRKO7ZPIF",
-        "time": "06:59:59.80",
+        "time": "06:59:59.85",
         "xy": {
             "app_icon": {
                 "x": 164,
                 "y": 2189
             },
             "first_login_button": {
-                "x": 535,
-                "y": 880
+                "x": 518,
+                "y": 700
             },
             "username_field": {
                 "x": 210,
@@ -107,15 +107,15 @@
     {
         "alias": "Hugo's Android 2",
         "machine_id": "E6M7KVHYX4CEWKQK",
-        "time": "06:59:59.85",
+        "time": "06:59:59.80",
         "xy": {
             "app_icon": {
                 "x": 164,
                 "y": 2189
             },
             "first_login_button": {
-                "x": 535,
-                "y": 880
+                "x": 518,
+                "y": 700
             },
             "username_field": {
                 "x": 210,
