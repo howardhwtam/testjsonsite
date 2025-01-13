@@ -79,20 +79,20 @@
                 "y": 2189
             },
             "first_login_button": {
-                "x": 518,
-                "y": 700
+                "x": 530,
+                "y": 670
             },
             "username_field": {
-                "x": 210,
-                "y": 515
+                "x": 520,
+                "y": 670
             },
             "password_field": {
-                "x": 230,
-                "y": 820
+                "x": 520,
+                "y": 980
             },
             "second_login_button": {
-                "x": 540,
-                "y": 1020
+                "x": 530,
+                "y": 1320
             },
             "facilities_tab": {
                 "x": 334,
@@ -114,24 +114,24 @@
                 "y": 2189
             },
             "first_login_button": {
-                "x": 518,
-                "y": 700
+                "x": 530,
+                "y": 670
             },
             "username_field": {
-                "x": 210,
-                "y": 515
+                "x": 520,
+                "y": 670
             },
             "password_field": {
-                "x": 230,
-                "y": 820
+                "x": 520,
+                "y": 980
             },
             "second_login_button": {
-                "x": 540,
-                "y": 1020
+                "x": 530,
+                "y": 1320
             },
             "facilities_tab": {
-                "x": 338,
-                "y": 2121
+                "x": 334,
+                "y": 2226
             },
             "book_now_button": {
                 "x": 904,
